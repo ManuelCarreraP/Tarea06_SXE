@@ -80,4 +80,37 @@ volumes:
   db_data:
   prestashop_data:
 ```  
+___________
+
+#### 2º PASO
+Para no dejar contraseñas en el docker-compose.yml, vamos a crear un archivo .env en la misma carpeta que el docker-compose.yml
+En la misma ruta donde creamos el fichero anterior crearemos ahora el documento .env y lo abriremos con los siguientes comandos:  
+
+```bash
+touch .env
+nano .env
+```  
+<img width="602" height="89" alt="image" src="https://github.com/user-attachments/assets/885fb4f9-8437-4f7b-bfdc-2977510320f1" />
+<br><br>
+
+A continuación añadiremos lo siguiente al fichero .env:  
+```bash
+# Variables para MariaDB
+MYSQL_ROOT_PASSWORD=root123
+MYSQL_DATABASE=prestashop_db
+MYSQL_USER=prestashop_user
+MYSQL_PASSWORD=prestashop_pass
+
+# Variables para PrestaShop
+DB_SERVER=db
+DB_NAME=prestashop_db
+DB_USER=prestashop_user
+DB_PASSWORD=prestashop_pass
+ADMIN_MAIL=admin@prestashop.com
+ADMIN_PASSWD=admin123
+```
+
+<img width="644" height="343" alt="image" src="https://github.com/user-attachments/assets/baaa8585-d5bc-4262-addb-dd21de1f6b91" />
+
+___________
 
