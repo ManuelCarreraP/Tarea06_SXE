@@ -89,8 +89,8 @@ Este fragmento del código sirve para verificar la salud de los contenedores y h
 ___________
 
 #### 2º PASO
-Para no dejar contraseñas en el docker-compose.yml, vamos a crear un archivo .env en la misma carpeta que el docker-compose.yml
-En la misma ruta donde creamos el fichero anterior crearemos ahora el documento .env y lo abriremos con los siguientes comandos:  
+Para no dejar contraseñas en el `docker-compose.yml`, vamos a crear un archivo `.env` en la misma carpeta que el `docker-compose.yml`.  
+Con los siguientes comandos crearemos y abriremos el archivo `.env` 
 
 ```bash
 touch .env
@@ -99,7 +99,7 @@ nano .env
 <img width="602" height="89" alt="image" src="https://github.com/user-attachments/assets/885fb4f9-8437-4f7b-bfdc-2977510320f1" />
 <br><br>
 
-A continuación añadiremos lo siguiente al fichero .env:  
+A continuación añadiremos lo siguiente al fichero `.env`:  
 ```bash
 # Variables
 MYSQL_ROOT_PASSWORD=contraseña123
